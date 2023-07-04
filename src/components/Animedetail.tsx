@@ -65,13 +65,13 @@ function AnimeDetail() {
 
   return (
     <div className="Animedetail">
-        <img src={`http://127.0.0.1:8000${animeData.animeimage}`} className="trimming03" alt="Anime" />
-        <h1 className='text'>{animeData.title}</h1>
-        <h3 className="arasuzi" id="midasi">作品あらすじ</h3><br></br>
-        <p className="disc">{animeData.description}</p>
+        <img src={`http://127.0.0.1:8000${animeData.animeimage}`} className="animeimage" alt="Anime" />
+        <h1 className='animetitle'>{animeData.title}</h1>
+        <h3 className="underline" id="midasi">作品あらすじ</h3>
+        <p className="discription">{animeData.description}</p>
         <br></br><br></br><br></br>
        
-        <h2>Place</h2>
+        <h2 className='underline'>舞台となった場所</h2>
         <div className="seichi-list">
             
                 {placeData.map((place) => (
@@ -84,9 +84,10 @@ function AnimeDetail() {
                     </div>
                     </Link>
                 ))}
-            </div>
         </div>
-  
+        <Under />
+    </div>
+    
    
   );
 }

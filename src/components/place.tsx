@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Under from './footer';
+import './place.css'
 interface CandidateData {
   placeid: number;
   name: string;
@@ -41,15 +42,18 @@ function YourComponent(props: { placeid : number }) {
 
   return (
     <div className='placeposts'>
-        <h2>投稿</h2>
+      <h2 className='underline'>投稿</h2>
+      <div className="seichi-list">
       {data.map((item) => (
         <div key={item.placeid}>
+          <div className="seichi-card">
           <img src={`http://127.0.0.1:8000${item.postimage}`} alt={item.title} className="placeimage"/>
-          <h1>{item.title}</h1>
-          <h1>{item.description}</h1>
+          <h2>{item.title}</h2>
           <p>{item.userid}</p>
+          </div>
         </div>
       ))}
+      </div>
     </div>
   );
 }
@@ -86,11 +90,11 @@ function CandidateDataComponent() {
           {/* Image */}
           <img src={`http://127.0.0.1:8000${data.placeimage}`} alt={data.name} className="placeimage"/>
           <h1>{data.name}</h1>
-          <h2>説明</h2>
+          <h2 className="underline">説明</h2>
           <p>{data.descpiption}</p>
-          <h2>注意点</h2>
+          <h2 className='underline'>注意点</h2>
           <p>{data.notes}</p>
-          <h2>アクセス</h2>
+          <h2 className='underline'>アクセス</h2>
           <p>{data.accsess}</p>
         </div>
       ) : (

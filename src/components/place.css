@@ -1,3 +1,11 @@
+*{
+    color: #9747FF;
+}
+
 .placeimage{
     width: 100%;
 }
+.underline {
+    border-bottom:1px solid;
+}
+

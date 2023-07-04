@@ -14,7 +14,7 @@ const Under: React.FC = () => {
         </Link>
       </div>
       <div className="center">
-        <Link to="">
+        <Link to="/">
           <AiFillHome size={55}/>
         </Link>
       </div>

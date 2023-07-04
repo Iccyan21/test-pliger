@@ -1,4 +1,4 @@
-header{
+.App-header{
     margin-top: 10px;
     background-color: #FFFFFF;
     height: 50px;
@@ -8,8 +8,15 @@ header{
     margin-bottom: 16px;
 }
 
-header h1 {
+.App-header h1 {
     color: #9747FF;
     text-align: center;
     font-size: 45px;
+}
+.header-line {
+    width: 100%;    /* 線の幅をコンテナの100%に設定します */
+    height: 2px;    /* 線の高さ（太さ）を2pxに設定します */
+    background: #9747FF;  /* 線の色を黒に設定します */
+    margin-top: 10px;  /* 上方向のマージンを10pxに設定します */
+    margin-bottom: 10px;  /* 下方向のマージンを10pxに設定します */
 }

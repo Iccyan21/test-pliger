@@ -10,7 +10,7 @@ import CandidateDataComponent from './components/place'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="">
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<MapComponent />} />
           <Route path="/login" element={<Login />} />
