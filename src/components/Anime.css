@@ -30,3 +30,20 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+@media (max-width: 390px) {
+  .Anime{
+    margin-top: 75px;
+  }
+  .title {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .anime-list{
+    margin-top: -50px;
+    
+  }
+
+}

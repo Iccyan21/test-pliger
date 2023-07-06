@@ -71,7 +71,7 @@ function AnimeDetail() {
         <p className="discription">{animeData.description}</p>
         <br></br><br></br><br></br>
        
-        <h2 className='underline'>舞台となった場所</h2>
+        <h2 className='seichi-desc-title'>舞台となった場所</h2>
         <div className="seichi-list">
             
                 {placeData.map((place) => (

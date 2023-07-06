@@ -1,8 +1,12 @@
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+*{
+  color: #9747FF;
+  font-family: Arial, sans-serif;
+   
 }
 
 .App-header {

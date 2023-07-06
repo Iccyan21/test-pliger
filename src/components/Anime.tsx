@@ -37,10 +37,16 @@ function AnimeComponent() {
   return (
     <div className = "Anime">
       <Baner/>
+      <div className='title'>
+        <h2>人気のアニメ</h2>
+      </div>
+      
         <div className="anime-list">
+         
         
         {data.map((item: AnimeData) => (
           <Link to={`/anime/${encodeURIComponent(item.title)}`} key={item.animeid}>
+
             <div className="anime-card">
               <img src={`http://127.0.0.1:8000${item.animeimage}`} alt="Anime" />
               <h2>{item.title}</h2>
@@ -48,7 +54,26 @@ function AnimeComponent() {
           </Link>
         ))}
         
-        </div>
+      </div>
+      <div className='title'>
+        <h2>おすすめのアニメ</h2>
+      </div>
+      
+        <div className="anime-list">
+         
+        
+        {data.map((item: AnimeData) => (
+          <Link to={`/anime/${encodeURIComponent(item.title)}`} key={item.animeid}>
+
+            <div className="anime-card">
+              <img src={`http://127.0.0.1:8000${item.animeimage}`} alt="Anime" />
+              <h2>{item.title}</h2>
+            </div>
+          </Link>
+        ))}
+        
+      </div>
+
     <Under />
     </div>
 

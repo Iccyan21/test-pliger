@@ -114,7 +114,8 @@ const MapComponent: React.FC = () => {
 
 
       const buttonId = `button_${location.name}`; // 重複しないようにidを作成
-      const button = `<button id="${buttonId}">ここへ行く</button>`; // 文字列として作成
+      const button = `<button style="padding: 10px 20px; color: white; background-color: #007BFF; border: none; border-radius: 4px; cursor: pointer; width: 100%; max-width: 300px;" id="${buttonId}">ここへ行く</button>`;
+
 
       const infowindow = new maps.InfoWindow({
           content: `
@@ -283,7 +284,7 @@ const MapComponent: React.FC = () => {
         </form>
       </div>
 
-      <div style={{ height: "610px", width: "100%" }}>
+      <div style={{ height: "780px", width: "100%" }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyANo-MndvZ0THsRxGEaTBHUfRCUXLv3w2g" }} // TODO: 自分のAPIキーを指定
           defaultCenter={{ lat: 35.6794397, lng: 139.7663463 }}

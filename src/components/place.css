@@ -1,11 +1,35 @@
-*{
-    color: #9747FF;
+ /* Iphone12 */
+@media (max-width: 390px) {
+    /* ここに適用したいスタイルを記述します */
+    *{
+        color: #9747FF;
+        font-family: Arial, sans-serif;
+        
+    }
+    .place {
+        margin-top: 75px;
+    
+    
+    }
+    .placeimage{
+        width: 100%;
+    }
+    .placename {
+        margin-top: 0px;
+        
+    }
+    .placedesc{
+        margin-bottom: 50px;
+    }
+ 
+    .placedesc h2 {
+        border-bottom:1px solid;
+        margin-bottom: 30px;
+    }
+    .placedesc p {
+        margin-top: -25px;     
+   }
+   .seichi-list{
+        margin-top: -55px;
+   }
 }
-
-.placeimage{
-    width: 100%;
-}
-.underline {
-    border-bottom:1px solid;
-}
-

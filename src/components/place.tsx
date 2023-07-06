@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Under from './footer';
 import './place.css'
+import Baner from './header'
+import { Link } from 'react-router-dom';
+
 interface CandidateData {
   placeid: number;
   name: string;
@@ -42,7 +45,10 @@ function YourComponent(props: { placeid : number }) {
 
   return (
     <div className='placeposts'>
-      <h2 className='underline'>投稿</h2>
+      <div className='placedesc'>
+        <h2>投稿</h2>
+      </div>
+      
       <div className="seichi-list">
       {data.map((item) => (
         <div key={item.placeid}>
@@ -86,21 +92,40 @@ function CandidateDataComponent() {
     <div className='place'>
       {data !== null ? (
         <div>
+          <Baner />
          
           {/* Image */}
           <img src={`http://127.0.0.1:8000${data.placeimage}`} alt={data.name} className="placeimage"/>
-          <h1>{data.name}</h1>
-          <h2 className="underline">説明</h2>
-          <p>{data.descpiption}</p>
-          <h2 className='underline'>注意点</h2>
-          <p>{data.notes}</p>
-          <h2 className='underline'>アクセス</h2>
-          <p>{data.accsess}</p>
+          
+          <h1 className='placename'>{data.name}</h1>
+          <div className='placedesc'>
+            <h2>説明</h2>
+            <p>{data.descpiption}</p>
+          </div>
+
+          <div className='placedesc'>
+            <h2>注意点</h2>
+            <p>{data.notes}</p>
+          </div>
+
+          <div className='placedesc'>
+            <h2 className='underline'>アクセス</h2>
+            <p>{data.accsess}</p>
+          </div>
+          <Link to={`/createpost/${data.placeid}`}>
+            <h2>投稿する</h2>
+          </Link>
+          
+          
         </div>
       ) : (
         <div>Loading...</div>
       )}
+      <div className='post'>
+        
+      </div>
       {data !== null && <YourComponent placeid={data.placeid} />}
+      
       <Under />
     </div>
   );

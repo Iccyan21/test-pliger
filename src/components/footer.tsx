@@ -19,7 +19,10 @@ const Under: React.FC = () => {
         </Link>
       </div>
       <div className="right">
-        <CgProfile size={55}/>
+        <Link to ='/profile'>
+          <CgProfile size={55}/>
+        </Link>
+        
       </div>
     </div>
   );

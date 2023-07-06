@@ -1,0 +1,40 @@
+.profile-container {
+    margin-top: 75px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .profile-title {
+    color: #333;
+  }
+  
+  .profile-text {
+    color: #666;
+  }
+  
+  .profile-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .auth-buttons {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .auth-buttons h2 {
+    color: #333;
+  }
+  

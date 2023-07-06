@@ -1,22 +1,24 @@
-.App-header{
-    margin-top: 10px;
-    background-color: #FFFFFF;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 16px;
-}
 
-.App-header h1 {
-    color: #9747FF;
-    text-align: center;
-    font-size: 45px;
-}
-.header-line {
-    width: 100%;    /* 線の幅をコンテナの100%に設定します */
-    height: 2px;    /* 線の高さ（太さ）を2pxに設定します */
-    background: #9747FF;  /* 線の色を黒に設定します */
-    margin-top: 10px;  /* 上方向のマージンを10pxに設定します */
-    margin-bottom: 10px;  /* 下方向のマージンを10pxに設定します */
+/* IPhon12 */
+@media (max-width: 390px) {
+    .header{
+        position: fixed;
+        background-color: white;
+        top: 0;
+        width: 100%;
+        z-index: 9999; 
+        height: 70px;
+        display: flex;
+        margin-bottom: 16px;
+    }
+    
+    .header-left{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .header-center{
+        
+        margin-left: 5px;
+    }
+    
 }
