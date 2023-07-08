@@ -7,10 +7,9 @@ import Login from './components/user/login';
 import AnimeDetail from './components/Animedetail'
 import CandidateDataComponent from './components/place'
 import Profile from './components/user/profile';
-import CreatePost from './components/post';
+import PostPage from './components/post';
 
 function App() {
-  const placeid = 123;
   return (
     <div className="App">
       <BrowserRouter basename="/">
@@ -19,7 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/sighup" element={<Sighup />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/createpost/:placeid" element={<CreatePost placeid={placeid.toString()} />} />
+          <Route path="/post/:name" element={<PostPage />} />
           <Route path="/anime" element={<AnimeComponent />} />
           <Route path="/anime/:title" element={<AnimeDetail />} />
           <Route path="/gmap/:name" element={<CandidateDataComponent />}/>
