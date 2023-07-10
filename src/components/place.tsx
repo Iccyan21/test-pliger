@@ -110,7 +110,7 @@ function CandidateDataComponent() {
             <p>{data.accsess}</p>
           </div>
 
-          <p>{data.name}</p>
+         
 
           <Link
             to={`/post/${encodeURIComponent(data.name)}`}

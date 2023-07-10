@@ -1,3 +1,46 @@
+ /* ここに適用したいスタイルを記述します */
+*{
+    color: #9747FF;
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* increase base font-size for larger screens */
+}
+
+.place {
+    margin-top: 80px; /* increase margin for larger screens */
+}
+
+.placeimage {
+    width: 100%;
+    max-width: 800px; /* limit max-width for larger screens */
+    display: block; /* center the image */
+    margin: 0 auto; /* center the image */
+    margin-bottom: 20px;
+}
+
+.placename {
+    margin-top: 0px;
+    font-size: 36px; /* increase font-size for larger screens */
+}
+
+.placedesc {
+    margin-bottom: 100px; /* increase margin for larger screens */
+}
+
+.placedesc h2 {
+    border-bottom: 1px solid;
+    margin-bottom: 60px; /* increase margin for larger screens */
+    font-size: 28px; /* increase font-size for larger screens */
+}
+
+.placedesc p {
+    margin-top: -25px;
+    font-size: 22px; /* increase font-size for larger screens */
+}
+
+.seichi-list {
+    margin-top: -55px;
+}
+
  /* Iphone12 */
 @media (max-width: 390px) {
     /* ここに適用したいスタイルを記述します */

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import GoogleMapReact from "google-map-react";
 import Under from "./footer";
-
+import './Map.css'
 async function fetchLocations(query: string): Promise<any[]> {
   const response = await fetch(`http://127.0.0.1:8000/gmap/places/search/?q=${encodeURIComponent(query)}`);
   const data = await response.json();

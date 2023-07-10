@@ -92,6 +92,7 @@ const PostPage: React.FC = () => {
   return (
     <div className='postform'>
         <Baner/>
+        <h1 className='posttitle'>投稿する</h1>
         <form onSubmit={handleSubmit} className="create-post-form">
         <input
             type="text"

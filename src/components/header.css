@@ -1,3 +1,25 @@
+.header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    z-index: 9999; 
+    height: 70px;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.header-left{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.header-center{
+    
+    margin-left: 5px;
+}
+
+
+
 
 /* IPhon12 */
 @media (max-width: 390px) {

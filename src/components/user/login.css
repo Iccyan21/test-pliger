@@ -3,109 +3,204 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* full viewport height */
-
+  height: 100vh;
 }
 
 .Icon {
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Increase margin */
+  padding-left: 600px;
 }
 
 .Login input {
-  margin: 10px 0; /* top/bottom margin, no left/right margin */
-  padding: 10px;
-  width: 80%;
-  max-width: 300px;
+  margin: 20px 0; /* Increase margin */
+  padding: 15px; /* Increase padding */
+  width: 50%; 
+  max-width: 600px; 
   border-radius: 5px;
   border: 1px solid #ddd;
+  font-size: 18px; /* Increase font size */
 }
 
 .Login button {
-  margin: 10px 0;
-  padding: 10px 20px;
+  margin: 20px 0; /* Increase margin */
+  padding: 15px 30px; /* Increase padding */
   border: none;
- 
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px; /* Increase font size */
 }
-
 
 .Login .text {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 40px; /* Increase margin */
+  font-size: 32px; /* Increase font size */
 }
+
 .Icon {
-    color: #9747FF;
-    display: flex;
-    margin-left: 100px;
-    margin-top: 75px;
-    height: 125px;
-    width: 100%;
+  color: #9747FF;
+  display: flex;
+  margin-left: 300px; /* Increase margin */
+  margin-top: 100px; /* Increase margin */
+  height: 150px; /* Increase size */
+  width: 100%;
 }
+
 .text {
-    color: #9747FF;
-    display: flex;
-    margin-left: 155px;
-    margin-top: 50px;
+  color: #9747FF;
+  display: flex;
+  margin-left: 100px; /* Increase margin */
+  margin-top: 70px; /* Increase margin */
 }
+
+.form {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px; /* Increase margin */
+  width: 80%; 
+  max-width: 800px; 
+  border-radius: 8px;
+}
+
+.form input {
+  margin-bottom: 20px; /* Increase margin */
+  padding: 15px; /* Increase padding */
+  width: 100%;
+  max-width: 600px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 18px; /* Increase font size */
+
+}
+
+.form button {
+  padding: 15px 30px; /* Increase padding */
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 600px;
+  font-size: 18px; /* Increase font size */
+  margin-bottom: 90px;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+
 @media (max-width: 390px) {
   .Login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh; /* full viewport height */
+
+  }
+
+  .Icon {
+    margin-bottom: 20px;
+  }
+
+  .Login input {
+    margin: 10px 0; /* top/bottom margin, no left/right margin */
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+
+  .Login button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
   
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .Login .text {
+    margin-bottom: 20px;
+    font-size: 24px;
   }
   .Icon {
-    margin-top: -240px;
-    margin-left: 130px;
-    margin-bottom: 20px;
+      color: #9747FF;
+      display: flex;
+      margin-left: 100px;
+      margin-top: 75px;
+      height: 125px;
+      width: 100%;
   }
   .text {
-    margin-top: 90px;
-    margin-left: 0px;
-    margin-bottom: 20px;
-    font-size: 90px;
+      color: #9747FF;
+      display: flex;
+      margin-left: 155px;
+      margin-top: 50px;
   }
-  .text h2{
-    font-size: 55px;
+  @media (max-width: 390px) {
+    .Login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .Icon {
+      margin-top: -240px;
+      margin-left: 130px;
+      margin-bottom: 20px;
+    }
+    .text {
+      margin-top: 90px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+      font-size: 90px;
+    }
+    .text h2{
+      font-size: 55px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 10px;
+      width: 60%; /* added width */
+      max-width: 500px; /* increased max-width */
+
+      border-radius: 8px;
+
+    }
+
+    .form input {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+        max-width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .form button {
+        padding: 10px 20px;
+        color: white;
+        background-color: #007BFF; /* Bootstrap primary color */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .form button:hover {
+        background-color: #0056b3; /* darker blue */
+    }
+
   }
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 10px;
-    width: 60%; /* added width */
-    max-width: 500px; /* increased max-width */
-
-    border-radius: 8px;
-
-  }
-
-  .form input {
-      margin-bottom: 10px;
-      padding: 10px;
-      width: 100%;
-      max-width: 300px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-  }
-
-  .form button {
-      padding: 10px 20px;
-      color: white;
-      background-color: #007BFF; /* Bootstrap primary color */
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-      max-width: 300px;
-  }
-
-  .form button:hover {
-      background-color: #0056b3; /* darker blue */
-  }
-
 }
-  

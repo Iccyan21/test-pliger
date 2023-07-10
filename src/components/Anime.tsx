@@ -59,7 +59,7 @@ function AnimeComponent() {
         <h2>おすすめのアニメ</h2>
       </div>
       
-        <div className="anime-list">
+        <div className="anime-list1">
          
         
         {data.map((item: AnimeData) => (

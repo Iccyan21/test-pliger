@@ -1,53 +1,53 @@
 .sighin {
-    padding-left: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* full viewport height */
-}
+    max-width: 600px; /* center the container */
+    margin: 0 auto; /* center the container */
+  }
   
-.icon {
-    margin-bottom: 20px;
-    color: #9747FF;
+  .Icon {
+    margin-top: 200px;
+    margin-left: 0px;
+  }
+  
+  .text h2 {
+    font-size: 55px;
+  }
+  
+  .sighin {
+    margin-top: 0px;
     display: flex;
-    margin-left: 100px;
-    margin-top: 75px;
-    height: 125px;
-    width: 100%;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   
-.sighin input {
-    margin: 10px 0; /* top/bottom margin, no left/right margin */
+  .sighin input {
+    margin-bottom: 10px;
     padding: 10px;
-    width: 80%;
-    max-width: 300px;
-    border-radius: 5px;
+    width: 100%;
+    max-width: 600px; /* increase input width for larger screens */
     border: 1px solid #ddd;
-}
+    border-radius: 4px;
+  }
   
-.sighin button {
-    margin: 10px 0;
+  .sighin button {
     padding: 10px 20px;
-    border: none;
-    background-color: #007BFF; /* Bootstrap primary color */
     color: white;
-    border-radius: 5px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-}
+    width: 100%;
+    max-width: 600px; /* increase button width for larger screens */
+  }
   
-.sighin button:hover {
+  .sighin button:hover {
     background-color: #0056b3; /* darker blue */
-}
+  }
   
-.text {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #9747FF;
-    display: flex;
-    margin-left: 155px;
-    margin-top: 50px;
-}
 
 @media (max-width: 391px) {
     .sighin {

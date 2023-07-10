@@ -1,3 +1,16 @@
+.Anime{
+  margin-top: 75px;
+}
+.title {
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.anime-list{
+  margin-top: -50px;
+  
+}
 .anime-list {
   display: flex;
   overflow-x: scroll;
@@ -30,7 +43,15 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.anime-list1{
+  margin-top: -50px;
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px;
+  gap: 20px;
+  margin-bottom: 50px;
 
+}
 @media (max-width: 390px) {
   .Anime{
     margin-top: 75px;
@@ -38,7 +59,7 @@
   .title {
     margin-top: 0px;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .anime-list{
