@@ -4,6 +4,7 @@ import { useParams,RouteMatch } from 'react-router-dom';
 import './post.css'
 import Baner from './header';
 import Under from './footer';
+import {  useNavigate } from "react-router-dom";
 
 interface PostData {
   placeid: number;
@@ -22,6 +23,7 @@ const PostPage: React.FC = () => {
   const [animeid, setAnimeid] = useState(0);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<PostData | null>(null);
+  const navigation = useNavigate();
 
   const { name }: { name?: string } = useParams();
 
@@ -79,6 +81,7 @@ const PostPage: React.FC = () => {
 
       // Handle successful post creation...
       console.log(res.data);
+      navigation(`/gmap/${name}`);
     } catch (error) {
       // Handle errors...
       console.error(error);
