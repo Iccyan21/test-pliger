@@ -78,7 +78,7 @@ function AnimeDetail() {
                     <Link to={`/gmap/${place.name}`}>
                     <div key={place.placeid}>
                         <div className="seichi-card">
-                            <img src={`http://127.0.0.1:8000${place.placeimage}`} alt="Anime" />
+                            <img src={`http://127.0.0.1:8000${place.placeimage}`} alt="Anime" className='Animeimage' />
                             <h2>{place.name}</h2>
                         </div>
                     </div>

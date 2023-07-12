@@ -3,7 +3,11 @@
 }
 .animeimage{
     width: 100%;
-    height: 400px;
+    max-width: 800px; /* limit max-width for larger screens */
+    display: block; /* center the image */
+    margin: 0 auto; /* center the image */
+    margin-bottom: 20px;
+    height: 500px;
 }
  .underline {
         border-bottom:1px solid;
