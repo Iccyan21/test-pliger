@@ -1,6 +1,0 @@
-installしたやつ 
-react-router-dom cmd: npm install react-router-dom
-
-google map api cmd: npm install --save google-maps-react
-
-react-icons cmd: npm install react-icons --save
